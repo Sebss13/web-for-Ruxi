@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(255, 104, 104);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#fake{
+    text-align: center;
+    animation: hide 2s forwards 5s;
+}
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to{opacity: 0;}
+    
+}
+#fake2{
+    text-align: center;
+    animation: fake2show 5s forwards 6s;
+    opacity: 0;
+}
+#fake3{
+    text-align: center;
+    animation: show2 5s forwards 10s;
+    opacity: 0;
+}
+
+@keyframes fake2show {
+    from{
+        opacity: 0;
+    }
+    50%{opacity: 1;}
+    
+    to{
+        opacity: 0;
+    }
+    
+}
+@keyframes show2 {
+    from{
+        opacity: 0;
+    }
+     50%{opacity: 1;}
+    
+    to{
+        opacity: 0;
+    }
+    
+}
+
+
+
+#main{
+    text-align: center;
+    animation: showcar 5s forwards 10s;
+    opacity: 0;
+}
+@keyframes showcar {
+    from{
+        opacity: 0;
+    }
+     to{opacity: 1;}
+    
+}
+#images{
+    text-align: center;
+    margin-left: -11%;
+    display: flex;
+    transition: 1s;
+    z-index: 1;
+}
+#left,#right{
+    border: 1px solid rgb(228, 86, 70);
+    border-radius: 100px;
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+    background-color: salmon;
+    z-index: 2;
+}
+#left{
+left: 10px;
+top: 50%;
+}
+
+#right{
+right: 10px;
+top: 50%;
+}
+#title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+#container img{
+    width: 300px;
+    border-radius:20px ;
+    border: 10px solid salmon;
+    box-shadow: 10px 10px 10px rgb(194, 96, 85);
+}
+#container video{
+    width: 300px;
+    border-radius:20px ;
+    border: 10px solid salmon;
+    box-shadow: 10px 10px 10px rgb(194, 96, 85);
+}
+
+#container{
+    margin-left: 83px;
+}
